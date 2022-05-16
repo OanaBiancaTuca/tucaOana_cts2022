@@ -2,6 +2,7 @@ package teste;
 
 import clase.Matematica;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.List;
@@ -10,10 +11,18 @@ import static org.junit.Assert.*;
 
 public class MatematicaTest {
     private Matematica matematica;
+    //o singura data apelat inainte de toate testele
+    @BeforeClass
+    public static void beforeClass(){
+        System.out.println("beforeClassa");
 
+    }
+
+    //se apeleaza inainte de fiecare test
     @Before
     public void creeazaObiectMatematica() {
         this.matematica =Matematica.getInstantaMatematica();
+//        System.out.println("Am fost apelat");
     }
     @Test
     public void testSingletonMatematica(){
