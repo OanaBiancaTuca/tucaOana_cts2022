@@ -46,4 +46,11 @@ public class TestGetVarsta {
        Persoana persoana2= new Persoana("Ana","60012120000000");
         assertTrue(persoana1.getVarsta()>persoana2.getVarsta());
    }
+   @Test(expected = NullPointerException.class)
+   public void testGetVarstaExistance(){
+       Persoana persoana1= new Persoana("Andrei",null);
+       persoana1.getVarsta();
+   }
+
+
 }
