@@ -1,5 +1,7 @@
+Calitate și testare software
+
 # tucaOana_cts2022
-# tucaOana_cts2022
+
 Gestiunea versiunilor codului sursa - Git, SVN
 
 • Clean code - Principii privind scrierea codului sursă
